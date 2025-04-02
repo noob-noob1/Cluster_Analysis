@@ -47,7 +47,7 @@ with st.form("user_inputs"):
     
     
     # Submit button
-    submitted = st.form_submit_button("Predict You cluster")
+    submitted = st.form_submit_button("Predict your cluster")
 
 
 # Handle the dummy variables to pass to the model
