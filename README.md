@@ -1,9 +1,60 @@
-Clustering
+Clustering Customers 
 ==============================
 
-Modulirizing a cluster analysis project
+An app has been built using Streamlit and deployed with Streamlit community cloud
 
+[Visit the app here](https://clusteranalysis-n9lzcudmv8d8ebjwscehkz.streamlit.app/)
+
+This project predicts which cluter out 5 main clusters a customer belongs to based on his/her age, gender, annual income, and spending score.
+
+## Features
+- User-friendly interface powered by Streamlit.
+- Input form to enter details such as gender, age, annual income, and spending score.
+- Real-time prediction of lcluster.
+- Accessible via Streamlit Community Cloud
+
+## Dataset
+The application is trained on the **mall_customer**, which widely used for unsupervised learning problems. The dataset contains the following features:
+- Age
+- Gender
+- Spending score
+- Annual income
+
+## Technologies Used
+- **Streamlit**: For building the web application.
+- **Scikit-learn**: For model training and evaluation.
+- **Pandas** and **NumPy**: For data preprocessing and manipulation.
+- **Matplotlib** and **Seaborn**: For exploratory data analysis and visualization (if applicable).
 Project Organization
+
+## Model
+The predictive model is trained using the mall customers dataset. As this is **customer segmentation** problem, the model is a clustering algorithm. 
+
+### Number of Clusters
+
+Through EDA, the optimal number of clusters is determined to be 5 by calculating the silhouette score when all features are included as seen below
+
+![Alt text](Untitled.png)
+
+## Installation (for local deployment)
+If you want to run the application locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/noob-noob1/Cluster_Analysis.git
+
+2. Create and activate a virtual environment:
+   ```bash
+   python -m venv env
+   source env/bin/activate  # On Windows, use `env\\Scripts\\activate`
+
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+
+4. Run the Streamlit application:
+   ```bash
+   streamlit run streamlit.py
 ------------
 
     ├── LICENSE
